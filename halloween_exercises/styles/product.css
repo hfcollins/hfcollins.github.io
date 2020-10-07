@@ -1,0 +1,271 @@
+body {
+    background-image: url(../images/bats.gif);
+    background-position: center;
+    height: auto;
+}
+main{
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    width: 800px;
+    background-color: white;
+    border: 5px solid black;
+    margin: auto;
+    height: 540px;
+}
+
+header {
+    border-bottom: 3px solid black;
+    background-image: linear-gradient(45deg, white, orange 75%, black);
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+#top_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+}
+
+    #top_bar ul li {
+        float: left;
+        color: white;
+    }
+
+    #top_bar ul ul li {
+        float: none;
+    }
+
+    #top_bar ul li:hover > ul {
+        display: list-item;
+    }
+
+    #top_bar ul ul {
+        display: none;
+        position: absolute;
+    }
+
+#top_bar > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#top_bar ul li a:hover {
+    background-color: gray;
+}
+
+#top_bar ul li a {
+    text-align: center;
+    display: block;
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+}
+
+#side_bar ul {
+    padding: 20px;
+    padding-right: 5px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+#side_bar ul li{
+
+}
+
+    #side_bar ul li a {
+        display: block;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        text-decoration: none;
+        background-color: orange;
+        width: 80px;
+        height: 22px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+        #side_bar ul li a:link {
+            font-weight: bold;
+            color: black;
+        }
+
+        #side_bar ul li a:hover{
+            color: green;
+        }
+
+#left_panel{
+    float:left;
+    height: 200px;
+    width: 160px;
+    margin-left:0px;
+    padding-left: 0px;
+    text-align:left;
+}
+#right_panel {
+    float: right;
+    height: 345px;
+    width: 160px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: left;
+    background-color: rgba(255, 165, 0, 0.40)
+}
+
+#suggestions{
+    font-size: 90%;
+}
+
+#product_suggestions{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 20px;
+}
+#product_suggestions li a:link{
+    color: black;
+    font-size: 80%;
+}
+
+#product_suggestions li a:hover{
+    color: green;
+}
+#flying_bats{
+    height: 55px;
+    width: auto;
+}
+#ugly_rat {
+    height: 55px;
+    width: auto;
+}
+#strobe_light {
+    height: 55px;
+    width: auto;
+}
+
+
+
+
+.welcome_message::first-letter 
+{
+    font-size: 200%;
+}
+.welcome_message {
+    padding-left: 20px;
+    padding-right: 22px;
+}
+
+.goblin_message 
+{
+    margin-top: 0px;
+    margin-left: 115px;
+}
+
+
+.halloween_store {
+    margin-left: 115px;
+    margin-bottom:0px;
+    
+}
+
+
+.pumpkin{
+    float:left;
+    
+}
+
+#main_body{
+    height: 326px;
+}
+
+#cat_image{
+    float: left;
+    padding-right: 2em;
+}
+#description p {
+    margin: auto;
+}
+
+footer {
+    font-size: smaller;
+    text-align: center;
+    padding-top:20px;
+    border-top: 3px solid black;
+    background-image: linear-gradient(45deg, black, orange, white);
+    height: 24px;
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ul.side_bar{
+    padding:20px;
+    padding-right:5px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+li.side_bar a {
+    display: block;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: orange;
+    width: 80px;
+    height: 22px;
+    padding-left: 10px;
+    font-size: 14px;
+    
+}
+li.side_bar a:link {
+    font-weight: bold;
+    color: black;
+}
+
+li.side_bar a:hover {
+    color: green;
+}
+*/
+
+
+/*
+ul.top_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+li.top_bar{
+    display:inline-block;
+    color:white;
+    text-align: center;
+}
+
+li.top_bar a:hover{
+    background-color:gray;
+}
+
+li.top_bar a{
+    text-align: center;
+    display: block;
+    color: lightgray;
+    text-decoration:none;
+    padding: 10px 40px 10px 40px;
+    /*margin-right: 30px;
+    margin-left: 30px;
+    ///
+}
+    */
