@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="cafeJ.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul>
+            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" 
+                                         onclick="addTotal(1.95); addToOrder('Espresso - $1.95')"
+                                         onmouseover="hoverOn1(this)" onmouseout="hoverOff1(this)" alt="espresso"/></a></li>
+            		
+                    <li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" 
+                                         onclick="addTotal(2.95); addToOrder('Latte - $2.95')"
+                                         onmouseover="hoverOn2(this)" onmouseout="hoverOff2(this)" alt="latte"/></a></li>
+            		
+                    <li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" 
+                                         onclick="addTotal(3.45); addToOrder('Cappuccino - $3.45')"
+                                         onmouseover="hoverOn3(this)" onmouseout="hoverOff3(this)" alt="cappuccino"/></a></li>
+            		
+                    <li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" 
+                                         onclick="addTotal(1.75); addToOrder('Coffee - $1.75')"
+                                         onmouseover="hoverOn4(this)" onmouseout="hoverOff4(this)" alt="coffee"/></a></li>
+            		
+                    <li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" 
+                                         onclick="addTotal(1.95); addToOrder('Biscotti - $1.95')"
+                                         onmouseover="hoverOn5(this)" onmouseout="hoverOff5(this)" alt="biscotti"/></a></li>
+            		
+                    <li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" 
+                                         onclick="addTotal(2.95); addToOrder('Scone - $2.95')"
+                                         onmouseover="hoverOn6(this)" onmouseout="hoverOff6(this)" alt="scone"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+            		</select>
+            		<p id="total">&nbsp;</p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="button" onclick=" window.location = 'checkout.html';" name="place_order" id="place_order" value="Place Order">
+           			<input type="button" onclick ="clearOrder();" name="clear_order" id="clear_order" value="Clear Order">				            		
+            	</section>
+            </section>   
+
+
+
+        </form>
+    </main> 
+</body>
+</html>
