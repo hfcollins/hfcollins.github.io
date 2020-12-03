@@ -21,7 +21,9 @@ h2 {
     text-align: center;
     vertical-align: middle;
     border-radius: .25em;
-    padding: 4px;
+    padding: 8px;
+    margin-top: 1.5em;
+    margin-right: 2em;
 }
 
     #hdrButton:hover {
@@ -43,6 +45,22 @@ h2 {
         color: black;
     }
 
+
+#taButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25em;
+    padding: 8px;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+    #taButton:hover {
+        background-color: #ff4814;
+        color: black;
+    }
 .logo {
     width: 20em;
     height: auto;
@@ -51,8 +69,10 @@ h2 {
 }
 
 #callToday{
-    padding-bottom: 0.05em;
+    margin-top: .7em;
     width: 500px;
+    float: right;
+    
 }
 
 #top_bar ul {
@@ -112,6 +132,25 @@ body {
 
 }
 
+#homeBody {
+    width: 500px;
+}
+
+#aside {
+    float: right;
+    width: 1000px;
+}
+#covidHead {
+    font-size: 200%;
+}
+
+#aside a {
+    color: black;
+}
+    #aside a:hover {
+        color: #ff4814;
+    }
+
 #mainBody {
     max-width: 500px;
     height: auto;
@@ -149,14 +188,37 @@ body {
     border: 2px solid black;
 }
 
+#homeUl li {
+    padding-top: .5em;
+}
+
+#homeUl a {
+    color: black;
+}
+
+    #homeUl a:hover {
+        color: #ff4814;
+    }
+
 #applicationForm {
     width: 500px;
 }
 
 footer {
     color: white;
-    background-color: #0d0c0c;
+    background-color: black;
     height: 10em;
+}
+footer a {
+    color: white;
+}
+    footer a:hover {
+        color: #ff4814;
+    }
+
+#footerLogo {
+    float:right;
+    padding-right: 10em;
 }
 
 #bottomFooter {

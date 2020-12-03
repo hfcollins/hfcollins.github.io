@@ -16,7 +16,7 @@
              alt="Logo" class="logo" usemap="#logo_map" />
 
         <map name="logo_map">
-            <area shape="rect" coords="0, 0, 400, 72" href="index.html" />
+            <area shape="rect" coords="0, 0, 400, 72" href="home.html" />
         </map>
 
         <div id="callToday">
@@ -43,7 +43,7 @@
         <nav id="top_bar">
             <ul>
                 <li class="home">
-                    <a href="index.html"> Home </a>
+                    <a href="home.html"> Home </a>
                 </li>
                 <li>
                     <a href="products/product.html"> Academics </a>
@@ -51,25 +51,28 @@
                         <li>
                             <a href="gpaCalc.html"> GPA Calculator</a>
                         </li>
+                        <li>
+                            <a href="index.html"> Computer Science</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
                     <a href="personal.html"> Admissions </a>
                 </li>
                 <li>
-                    <a href="decorating.html">Student Affairs </a>
+                    <a href="affairs.html">Student Affairs </a>
                     <ul>
                         <li>
-                            <a href="outdoor/product.html">Alumni</a>
+                            <a href="alumni.html">Alumni</a>
                         </li>
                         <li>
-                            <a href="=indoors/product.html"> Giving</a>
+                            <a href="giving.html"> Giving</a>
                         </li>
                         <li>
-                            <a href="table/product.html">Development</a>
+                            <a href="development.html">Development</a>
                         </li>
                         <li>
-                            <a href="treats/product.html">Treats</a>
+                            <a href="financial.html">Financial Aid</a>
                         </li>
                     </ul>
                 </li>
@@ -82,7 +85,7 @@
     </div>
 
     <aside>
-        <img src="aumPic.jpg" id="sidebarImg" />
+        <img src="gpaImg.jpg" id="sidebarImg" />
     </aside>
 
     <div id="mainBody">
@@ -92,25 +95,11 @@
         <h2>
             Please enter your final grades and credit hours below.
         </h2>
-        <!--name = grade and score = credits-->
+
         <main>
-            <!--
-    <label for="grade">Letter Grade:&nbsp; &nbsp;</label>
-    <input type="text" id="grade"><br>
-
-    <label for="credit">Credit Hours:&nbsp; &nbsp;</label>
-    <input type="text" id="credit"><br>
-
-    <input type="button" id="add" value="Add to Breakdown">
-    <input type="button" id="display_results" value="Display Results"><br>
-
-    <div id="results"></div>
-    <div id="credits"></div>
-    <table id="credits_table"></table>
-     -->
 
             <label for="grade">Letter Grade 1:&nbsp; &nbsp;</label>
-            <input type="text" id="grade1"><br>
+            <input type="text" id="grade1" placeholder="A"><br>
 
             <label for="grade">Letter Grade 2:&nbsp; &nbsp;</label>
             <input type="text" id="grade2"><br>
@@ -119,7 +108,7 @@
             <input type="text" id="grade3"><br>
 
             <label for="credit">Credit Hours 1:&nbsp; &nbsp;</label>
-            <input type="text" id="credit1"><br>
+            <input type="text" id="credit1" placeholder="3"><br>
 
             <label for="credit">Credit Hours 2:&nbsp; &nbsp;</label>
             <input type="text" id="credit2"><br>
@@ -137,12 +126,16 @@
         </main>
 
     </div>
-   
+
 
     <footer id="gpaFooter">
-        AUM - Our Initiatives - Campus Engagement - Campus Links <br />
+        AUM - <a href="initiative.html">Our Initiatives</a> - <a href="engage.html">Campus Engagement</a> -
+        <a href="links.html">Campus Links</a> <br />
         <p id="bottomFooter">
-            &#169; All Rights Reserved. Auburn University at Montgomery -
+            &#169; All Rights Reserved. Auburn University at Montgomery - Hunter Collins
+            <div id="footerLogo">
+                <img src="aumLogo2.png" />
+            </div>
 
             <section id="footerButtons">
                 <input type="button" onclick=" window.location = 'checkout.html';"

@@ -3,12 +3,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>TA Application</title>
+    <title>AUM Computer Science Department</title>
 
     <link type="text/css" rel="stylesheet" href="cs.css">
     <script src="computerSciencePage.js"></script>
 </head>
+
 <body>
+
     <header>
 
         <img src="https://www.aum.edu/wp-content/uploads/2020/07/AUM_schoolname_Black02.png"
@@ -24,15 +26,17 @@
             </b>
         </div>
 
+
         <section id="headerButtons">
             <input type="button" onclick=" window.location = 'checkout.html';" name="moreInfo"
                    id="hdrButton" value="More Info">
-            <input type="button" onclick="window.location ='taApp.html';" " name="applyNow"
+            <input type="button" onclick="window.location ='taApp.html';" name="applyNow"
                    id="hdrButton" value="Apply Now">
             <input type="button" onclick=" window.location = 'checkout.html';" name="directory"
                    id="hdrButton" value="Directory">
-            <input type="button" onclick="clearOrder();" name="myAum" id="hdrButton" value="MyAum">
+            <input type="button" onclick="window.location = 'myaum.html';" name="myAum" id="hdrButton" value="MyAum">
         </section>
+
 
     </header>
 
@@ -81,69 +85,76 @@
         </nav>
     </div>
 
-    <aside>
-        <img src="taImg.jpg" id="sidebarImg" />
+    <aside id="aside">
+        <img src="aumPic.jpg" id="sidebarImg" />
+
+        <h2 id="covidHead">
+            How we are Handling COVID
+        </h2>
+        <p>
+            Follow all <a href="stateCovidInfo.html">state and local social distance protocols.</a> Remember to pick up your free mask! 
+            Hand sanitizing stations are available in every building across campus. <br />
+            If you feel uncomfortable attending in person classes will be made available online.
+        </p>
+
+        <h2>
+            <a href="tour">Plan Your Campus Tour!</a>
+        </h2>
+        <p>
+            Social distanced of course!
+        </p>
+
     </aside>
 
-    <div id="applicationForm">
-        <form name="myform" action="survey_data.html" method="get">
+    <div id="homeBody">
+        <h1>
+            Welcome to AUM!
+        </h1>
+        <h2>
+            Auburn University at Montgomery
+        </h2>
+        <p>
+            <b>We are excited to have you!</b>
+        </p>
 
-            <h1>Application</h1>
+        <h2>
+            Student Information
+        </h2>
+        <ul id="homeUl">
+            <li>
+                <a href="career.html">Career Development</a>
+            </li>
+            <li>
+                <a href="degree.html">Degrees and Programs</a>
+            </li>
+            <li>
+                <a href="scholarships">Scholarships and Financial Aid</a>
+            </li>
+            <li>
+                <a href="gpaCalc.html">GPA Calculator</a>
+            </li>
+        </ul>
 
-            <h2>About You</h2>
+        <h2>
+            Important News
+        </h2>
+        <ul id="homeUl">
+            <li>
+                <a href="taApp.html">TA's Needed Apply Here</a>
+            </li>
+            <li>
+                <a href="campusPolice.html">Campus Police</a>
+            </li>
+            <li>
+                <a href="covid.html">COVID-19 Info</a>
+            </li>
+        </ul>
 
-            <label for="id">Student ID:</label>
-            <input type="text" name="id" id="id" placeholder="S00000000" required pattern="S+[0-9]{8}"><br>
-
-            <label for="firstname">First name:</label>
-            <input type="text" name="firstname" id="firstname" required><br>
-
-            <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" id="lastname" required><br>
-
-            <label for="gender">Gender:</label>
-            <input type="text" name="gender" id="gender" pattern="[A-za-z]{1-10}"><br>
-
-            <label for="gpa">GPA:</label>
-            <input type="text" name="gpa" id="gpa"
-                   placeholder="Three Digits" required pattern="[0-4]+.[0-9]{2}" /><br />
-
-            <label for="subDate">Submission Date:</label>
-            <input type="text" name="subDate" id="subDate"
-                   placeholder="mm/dd/yy" required pattern="[0-9]{2}+/[0-9]{2}+/[0-9]{2}" /><br />
-
-            <label for="comments">Comments:</label>
-            <input type="text" name="comments" id="comments"><br>
-
-            <h2>
-                How did you hear about us?
-            </h2>
-
-            <label for="web"> Web Search</label>
-            <input type="checkbox" name="web" id="web" value="websearch" /><br />
-
-            <label for="Facebook">Facebook:</label>
-            <input type="checkbox" name="Facebook" id="Facebook" value="Facebook" />
-            <br />
-
-
-            <label for="Twitter">Twitter:</label>
-            <input type="checkbox" name="Twitter" id="Twitter" value="Twitter" />
-            <br />
-
-            <label for="emailmsg">Email Message:</label>
-            <input type="checkbox" name="emailmsg" id="emailmsg" value="emailmsg" />
-            <br />
-
-            <h2>Thank you for applying!</h2>
-            <input type="submit" name="button" id="taButton" value="Submit">
-            <input type="reset" name="reset" id="taButton" value="Reset">
-        </form>
     </div>
 
 
     <footer>
-        AUM - <a href="initiative.html">Our Initiatives</a> - <a href="engage.html">Campus Engagement</a> -
+        AUM - <a href="initiative.html">Our Initiatives</a> - <a href="engage.html">Campus Engagement</a> - 
         <a href="links.html">Campus Links</a> <br />
         <p id="bottomFooter">
             &#169; All Rights Reserved. Auburn University at Montgomery - Hunter Collins
@@ -155,8 +166,9 @@
                        name="feedback" id="footerButton" value="Feedback">
             </section>
 
-
+            
         </p>
     </footer>
+
 </body>
 </html>

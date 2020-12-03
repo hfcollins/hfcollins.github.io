@@ -1,8 +1,4 @@
-// JavaScript source code
-
 var $ = function (id) { return document.getElementById(id); };
-
-
 
 
 var displayResults = function () {
@@ -30,7 +26,9 @@ var displayResults = function () {
 		numGrade1 = 0.0;
 	}
 	else {
-		numGrade1 = 0.0;
+		$("grade1").value = "";
+		$("results").innerHTML = " ";
+		$("results").innerHTML += "Please enter an appropriate letter grade for grade 1: A, B, C, D, or F.";
 	}
 
 
@@ -50,7 +48,9 @@ var displayResults = function () {
 		numGrade2 = 0.0;
 	}
 	else {
-		numGrade2 = 0.0;
+		$("grade2").value = "";
+		$("results").innerHTML = " ";
+		$("results").innerHTML = "Please enter an appropriate letter grade for grade 2: A, B, C, D, or F.";
 	}
 
 	if (grade3 == 'A') {
@@ -69,12 +69,15 @@ var displayResults = function () {
 		numGrade3 = 0.0;
 	}
 	else {
-		numGrade3 = 0.0;
+		$("grade3").value = "";
+		$("results").innerHTML = " ";
+		$("results").innerHTML = "Please enter an appropriate letter grade for grade 3: A, B, C, D, or F.";
 	}
 
 	var sum = ((numGrade1 * credit1) + (numGrade2 * credit2) + (numGrade3 * credit3));
 	var totalCredits = (credit1 + credit2 + credit3);
 	var gpa = sum / totalCredits;
+	gpa = gpa.toFixed(2);
 	
 	$("results").innerHTML = "";
 
@@ -91,10 +94,11 @@ var clearEntries = function () {
 	$("credit1").value = ' ';
 	$("credit2").value = ' ';
 	$("credit3").value = ' ';
+
+	$("results").innerHTML = "<p>Your GPA = " + "</p>"
 }
 
 window.onload = function () {
 	$("display_results").onclick = displayResults;
 	$("clear").onclick = clearEntries;
 };
-
