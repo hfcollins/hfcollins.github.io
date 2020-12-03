@@ -1,0 +1,183 @@
+﻿header {
+    background-color: #ff4814;
+    height: 4em;
+    font-size: large;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2em;
+    border-bottom: 3px solid #ff4814;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#hdrButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25em;
+    padding: 4px;
+}
+
+    #hdrButton:hover {
+        background-color: white;
+        color: black;
+    }
+
+.gpaButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25em;
+    padding: 4px;
+}
+
+    .gpaButton:hover {
+        background-color: #ff4814;
+        color: black;
+    }
+
+.logo {
+    width: 20em;
+    height: auto;
+    float: left;
+    padding-right: 1em;
+}
+
+#callToday{
+    padding-bottom: 0.05em;
+    width: 500px;
+}
+
+#top_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0c;
+    position: relative;
+}
+
+    #top_bar ul li {
+        float: left;
+        color: white;
+    }
+
+    #top_bar ul ul li {
+        float: none;
+    }
+
+    #top_bar ul li:hover > ul {
+        display: list-item;
+    }
+
+    #top_bar ul ul {
+        display: none;
+        position: absolute;
+        width: 190px;
+    }
+
+#top_bar > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#top_bar ul li a:hover {
+    background-color: #ff4814;
+}
+
+#top_bar ul li a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+}
+
+.home a {
+    color: #ff4814 !important;
+}
+
+.home a:hover {
+    color: white !important;
+}
+
+body {
+
+}
+
+#mainBody {
+    max-width: 500px;
+    height: auto;
+}
+
+#laborTable {
+    border: 2px solid gray;
+    width: 850px;
+}
+ #laborTable th, td {
+    border: 1px solid black;
+    padding: .2em 1em .2em .5em;
+    text-align: left;
+    vertical-align: middle;
+ }
+
+    #laborTable table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        margin: 20px auto; /* added auto*/
+    }
+
+
+    #laborTable thead {
+        background-color: #ff4814;
+    }
+
+
+#sidebarImg {
+    margin-top: 3.5em;
+    margin-right: 0.5em;
+    float: right;
+    max-width: 450px;
+    max-height: 500px;;
+    border: 2px solid black;
+}
+
+#applicationForm {
+    width: 500px;
+}
+
+footer {
+    color: white;
+    background-color: #0d0c0c;
+    height: 10em;
+}
+
+#bottomFooter {
+    font-size: 12px;
+}
+
+#footerButton {
+    background-color: white;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25em;
+    padding: 4px;
+}
+
+    #footerButton:hover {
+        background-color: #ff4814;
+        color: black;
+    }
+
+#gpaFooter {
+    margin-top: 10em;
+    position: relative;
+}
