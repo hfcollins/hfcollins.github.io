@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>GPA Calculator</title>
+
+    <link type="text/css" rel="stylesheet" href="cs.css">
+    <script src="computerSciencePage.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <img src="https://www.aum.edu/wp-content/uploads/2020/07/AUM_schoolname_Black02.png"
+             alt="Logo" class="logo" usemap="#logo_map" />
+
+        <map name="logo_map">
+            <area shape="rect" coords="0, 0, 400, 72" href="index.html" />
+        </map>
+
+        <div id="callToday">
+            <b>
+                Call Today! <br /> 334-244-3000
+            </b>
+        </div>
+
+
+        <section id="headerButtons">
+            <input type="button" onclick=" window.location = 'checkout.html';" name="moreInfo"
+                   id="hdrButton" value="More Info">
+            <input type="button" onclick="window.location ='taApp.html';" " name="applyNow"
+                   id="hdrButton" value="Apply Now">
+            <input type="button" onclick=" window.location = 'checkout.html';" name="directory"
+                   id="hdrButton" value="Directory">
+            <input type="button" onclick="clearOrder();" name="myAum" id="hdrButton" value="MyAum">
+        </section>
+
+
+    </header>
+
+    <div id="dropdownMenu">
+        <nav id="top_bar">
+            <ul>
+                <li class="home">
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="products/product.html"> Academics </a>
+                    <ul>
+                        <li>
+                            <a href="gpaCalc.html"> GPA Calculator</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="personal.html"> Admissions </a>
+                </li>
+                <li>
+                    <a href="decorating.html">Student Affairs </a>
+                    <ul>
+                        <li>
+                            <a href="outdoor/product.html">Alumni</a>
+                        </li>
+                        <li>
+                            <a href="=indoors/product.html"> Giving</a>
+                        </li>
+                        <li>
+                            <a href="table/product.html">Development</a>
+                        </li>
+                        <li>
+                            <a href="treats/product.html">Treats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="email.html"> Join E-mail </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <aside>
+        <img src="aumPic.jpg" id="sidebarImg" />
+    </aside>
+
+    <div id="mainBody">
+        <h1>
+            GPA Calculator
+        </h1>
+        <h2>
+            Please enter your final grades and credit hours below.
+        </h2>
+        <!--name = grade and score = credits-->
+        <main>
+            <!--
+    <label for="grade">Letter Grade:&nbsp; &nbsp;</label>
+    <input type="text" id="grade"><br>
+
+    <label for="credit">Credit Hours:&nbsp; &nbsp;</label>
+    <input type="text" id="credit"><br>
+
+    <input type="button" id="add" value="Add to Breakdown">
+    <input type="button" id="display_results" value="Display Results"><br>
+
+    <div id="results"></div>
+    <div id="credits"></div>
+    <table id="credits_table"></table>
+     -->
+
+            <label for="grade">Letter Grade 1:&nbsp; &nbsp;</label>
+            <input type="text" id="grade1"><br>
+
+            <label for="grade">Letter Grade 2:&nbsp; &nbsp;</label>
+            <input type="text" id="grade2"><br>
+
+            <label for="grade">Letter Grade 3:&nbsp; &nbsp;</label>
+            <input type="text" id="grade3"><br>
+
+            <label for="credit">Credit Hours 1:&nbsp; &nbsp;</label>
+            <input type="text" id="credit1"><br>
+
+            <label for="credit">Credit Hours 2:&nbsp; &nbsp;</label>
+            <input type="text" id="credit2"><br>
+
+            <label for="credit">Credit Hours 3:&nbsp; &nbsp;</label>
+            <input type="text" id="credit3"><br>
+
+            <input type="button" class="gpaButton" id="clear" value="Clear Entries" />
+            <input type="button" class="gpaButton" id="display_results" value="Display Results"><br>
+
+            <div id="results"></div>
+            <div id="credits"></div>
+            <table id="credits_table"></table>
+
+        </main>
+
+    </div>
+   
+
+    <footer id="gpaFooter">
+        AUM - Our Initiatives - Campus Engagement - Campus Links <br />
+        <p id="bottomFooter">
+            &#169; All Rights Reserved. Auburn University at Montgomery -
+
+            <section id="footerButtons">
+                <input type="button" onclick=" window.location = 'checkout.html';"
+                       name="feedback" id="footerButton" value="Feedback">
+            </section>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TA Application</title>
+
+    <link type="text/css" rel="stylesheet" href="cs.css">
+    <script src="computerSciencePage.js"></script>
+</head>
+<body>
+    <header>
+
+        <img src="https://www.aum.edu/wp-content/uploads/2020/07/AUM_schoolname_Black02.png"
+             alt="Logo" class="logo" usemap="#logo_map" />
+
+        <map name="logo_map">
+            <area shape="rect" coords="0, 0, 400, 72" href="index.html" />
+        </map>
+
+        <b>
+            Call Today! <br /> 334-244-3000
+        </b>
+
+        <section id="headerButtons">
+            <input type="button" onclick=" window.location = 'checkout.html';" name="moreInfo"
+                   id="hdrButton" value="More Info">
+            <input type="button" onclick="window.location ='taApp.html';" " name="applyNow"
+                   id="hdrButton" value="Apply Now">
+            <input type="button" onclick=" window.location = 'checkout.html';" name="directory"
+                   id="hdrButton" value="Directory">
+            <input type="button" onclick="clearOrder();" name="myAum" id="hdrButton" value="MyAum">
+        </section>
+
+    </header>
+
+    <div id="dropdownMenu">
+        <nav id="top_bar">
+            <ul>
+                <li class="home">
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="products/product.html"> Academics </a>
+                    <ul>
+                        <li>
+                            <a href="gpaCalc.html"> GPA Calculator</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="personal.html"> Admissions </a>
+                </li>
+                <li>
+                    <a href="decorating.html"> Student Affairs </a>
+                    <ul>
+                        <li>
+                            <a href="outdoor/product.html">Alumni</a>
+                        </li>
+                        <li>
+                            <a href="=indoors/product.html"> Giving</a>
+                        </li>
+                        <li>
+                            <a href="table/product.html">Development</a>
+                        </li>
+                        <li>
+                            <a href="treats/product.html">Treats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="email.html"> Athletics </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <aside>
+        <img src="aumPic.jpg" id="sidebarImg" />
+    </aside>
+
+    <div id="applicationForm">
+        <form name="myform" action="survey_data.html" method="get">
+
+            <h1>Application</h1>
+
+            <h2>About You</h2>
+
+            <label for="id">Student ID:</label>
+            <input type="text" name="id" id="id" placeholder="S00000000" required pattern="S+[0-9]{8}"><br>
+
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" required><br>
+
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required><br>
+
+            <label for="gender">Gender:</label>
+            <input type="text" name="gender" id="gender" pattern="[A-za-z]"><br>
+
+            <label for="gpa">GPA:</label>
+            <input type="text" name="gpa" id="gpa"
+                   placeholder="Three Digits" required pattern="[0-4]+.[0-9]{2}" /><br />
+
+            <label for="subDate">Submission Date:</label>
+            <input type="text" name="subDate" id="subDate"
+                   placeholder="mm/dd/yy" required pattern="[0-9]{2}+/[0-9]{2}+/[0-9]{2}" /><br />
+
+            <label for="comments">Comments:</label>
+            <input type="text" name="comments" id="comments"><br>
+
+            <h2>
+                How did you hear about us?
+            </h2>
+
+            <label for="web"> Web Search</label>
+            <input type="checkbox" name="web" id="web" value="websearch" /><br />
+
+            <label for="Facebook">Facebook:</label>
+            <input type="checkbox" name="Facebook" id="Facebook" value="Facebook" />
+            <br />
+
+
+            <label for="Twitter">Twitter:</label>
+            <input type="checkbox" name="Twitter" id="Twitter" value="Twitter" />
+            <br />
+
+            <label for="emailmsg">Email Message:</label>
+            <input type="checkbox" name="emailmsg" id="emailmsg" value="emailmsg" />
+            <br />
+
+            <h2>Thank you for applying!</h2>
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset">
+        </form>
+    </div>
+
+
+    <footer>
+        AUM - Our Initiatives - Campus Engagement - Campus Links <br />
+        <p id="bottomFooter">
+            &#169; All Rights Reserved. Auburn University at Montgomery -
+
+            <section id="footerButtons">
+                <input type="button" onclick=" window.location = 'checkout.html';"
+                       name="feedback" id="footerButton" value="Feedback">
+            </section>
+        </p>
+    </footer>
+</body>
+</html>
