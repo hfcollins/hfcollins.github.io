@@ -140,6 +140,14 @@ body {
     float: right;
     width: 1000px;
 }
+
+#csPageImg {
+    padding-right: 20em;
+}
+
+#taPageImg {
+    margin-right: 20em;
+} 
 #covidHead {
     font-size: 200%;
 }
